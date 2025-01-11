@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>poat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <title>Nail paint</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      h1 {
+        font-style: italic;
+        font-size: 70px;
+      }
+
+      h2 {
+        font-style: italic;
+      }
+
+      .ab {
+        background-image: url(main_img.jpg);
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        margin-left: 10px;
+        background-size: 100% 100%;
+      }
+
+      .gam {
+        margin-bottom: 100px;
+      }
+
+      .bt1 {
+        width: 135px;
+        height: 45px;
+        border-radius: 5px;
+        padding: 0px;
+        margin-left: 20px;
+      }
+
+      .hov {
+        background-color: brown;
+        position: relative;
+        padding: 0px;
+        height: 350px;
+        width: 250px;
+        border-radius: 20px;
+        flex-grow: 1;
+        flex-basis: 250px;
+        margin-top: 20px;
+      }
+
+      .cover {
+        background-color: #d23f3f;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0.5;
+        border: none;
+        border-radius: 20px;
+        padding-top: 250px;
+      }
+
+      .hov:hover .cover {
+        display: block;
+        opacity: 0;
+      }
+
+      .gam {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+        flex-wrap: wrap;
+      }
+
+      .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        text-align: center;
+      }
+
+      .more {
+        background-color: orangered;
+        height: 60px;
+        width: 180px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        text-align: center;
+        justify-content: center;
+        font-size: 20px;
+      }
+
+      .more:hover {
+        background-color: transparent;
+        border: 2px solid black;
+        color: black;
+      }
+
+      h3 {
+        font-size: 50px;
+        font-style: italic;
+        margin: 100 0 100 0;
+      }
+
+      .dis {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .mcar {
+        margin-bottom: 100px;
+        margin-top: 40px;
+      }
+
+      .dcard {
+        background-image: url("phone_grees.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: top center;
+        background-attachment: scroll;
+      }
+
+      .cart {
+        margin: 0px;
+      }
+
+      .join {
+        height: 100vh;
+        width: 100%;
+        background-image: url("dinp.jpg");
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+      }
+
+      .star {
+        height: 100vh;
+        width: 100%;
+        background-image: url("star.jpg");
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+      }
+
+      .pop {
+        margin-top: 43vh;
+        margin-left: 20%;
+      }
+
+      .inp {
+        height: 10%;
+        width: 45%;
+        border-radius: 10px;
+        font-size: 20px;
+        font-style: italic;
+      }
+
+      .inp::before {
+        color: pink;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row ab">
+        <div class="row nav">
+          <div class="col-sm-6 offset-6">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+                <a
+                  class="navbar-brand"
+                  href="#"
+                  style="background-color: #d23f3f; border-radius: 10px"
+                  >Tripo Games
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Dropdown
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link disabled"
+                        href="#"
+                        tabindex="-1"
+                        aria-disabled="true"
+                        >Disabled</a
+                      >
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button class="btn btn-outline-success" type="submit">
+                      Search
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <h1>
+          Made to Be Played <br />
+          <h2>The Very Best in Mobile Gaming</h2>
+        </h1>
+        <button class="bt1">
+          <img src="Apple Store.png" width="135px" height=" 45px" />
+        </button>
+        <button class="bt1">
+          <img src="Google Play.png" width="135px" height=" 45px" />
+        </button>
+      </div>
+      <div class="row gam" style="margin-top: -100px">
+        <div class="col-sm-2 m-4 hov">
+          <img
+            src="kiop.jpg"
+            height="100%"
+            width="100%"
+            style="border-radius: 20px"
+          />
+          <div class="cover">
+            <h2 style="color: white">Kipon</h2>
+            <p style="color: white">casual-Free</p>
+          </div>
+        </div>
+
+        <div class="col-sm-2 m-4 hov">
+          <img
+            src="robot.jpg"
+            height="100%"
+            width="100%"
+            style="border-radius: 20px"
+          />
+          <div class="cover">
+            <h2 style="color: white">Robotrix</h2>
+            <p style="color: white">RPG-Free</p>
+          </div>
+        </div>
+
+        <div class="col-sm-2 m-4 hov">
+          <img
+            src="macnic.jpg"
+            height="100%"
+            width="100%"
+            style="border-radius: 20px"
+          />
+          <div class="cover">
+            <h2 style="color: white">Treasure Box</h2>
+            <p style="color: white">Adventure-Free</p>
+          </div>
+        </div>
+
+        <div class="col-sm-2 m-4 hov">
+          <img
+            src="robot.jpg"
+            height="100%"
+            width="100%"
+            style="border-radius: 20px"
+          />
+          <div class="cover">
+            <h2 style="color: white">EXplore Our Games</h2>
+            <p style="color: white"></p>
+          </div>
+        </div>
+      </div>
+      <div class="row text">
+        <h2>About Tripo</h2>
+        <h3 style="margin-top: 20px">Your Source for Mobile Entertainment</h3>
+        <p style="margin-top: 20px; font-size: 18px">
+          I'm a paragraph. Click here to add your own text and edit me.It’s
+          easy.Just click “Edit <br />
+          Text” or double click me to add your own content and make changes to
+          the font. I’m a <br />
+          great place for you to tell a story and let your users know a little
+          more about you.
+        </p>
+        <a href="#" class="btn btn-primary more">Learn More</a>
+      </div>
+      <div class="row dis">
+        <div class="col-md-6 edit">
+          <img src="edited.webp" width="100%" height="100%" />
+        </div>
+      </div>
+      <div class="row text">
+        <h3>Our Games</h3>
+        <p>
+          I'm a paragraph. Click here to add your own text and edit me. I’m a
+          great place for you to tell a story and let your users know a little
+          more about you.
+        </p>
+      </div>
+      <div class="row dcard">
+        <div class="col-sm-4 m-lg-5 mcar">
+          <div class="card">
+            <div class="card-body">
+              <a
+                href="#"
+                class="btn btn-primary"
+                style="height: 100px; width: 100px"
+                ><img src="cart.webp" class="cart" height="100%" width="100%"
+              /></a>
+              <h5 class="card-title">Kipon</h5>
+              <p>Casual - Free</p>
+              <p class="card-text">
+                I'm a paragraph. Click here to add your own text and edit me.
+                I’m a great place for you to tell a story and let your users
+                know a little more about you.
+              </p>
+              <a href="#" class="btn btn-primary">Google</a>
+              <a href="#" class="btn btn-primary">apple</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 offset-md-3 mcar">
+          <div class="card">
+            <div class="card-body">
+              <a
+                href="#"
+                class="btn btn-primary"
+                style="height: 100px; width: 100px"
+                ><img src="cart_2.webp" class="cart" height="100%" width="100%"
+              /></a>
+              <h5 class="card-title">Kipon</h5>
+              <p>Casual - Free</p>
+              <p class="card-text">
+                I'm a paragraph. Click here to add your own text and edit me.
+                I’m a great place for you to tell a story and let your users
+                know a little more about you.
+              </p>
+              <a href="#" class="btn btn-primary">Google</a>
+              <a href="#" class="btn btn-primary">apple</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-w-100"></div>
+        <div class="col-sm-4 m-lg-5 mcar">
+          <div class="card">
+            <div class="card-body">
+              <a
+                href="#"
+                class="btn btn-primary"
+                style="height: 100px; width: 100px"
+                ><img src="cart_3.webp" class="cart" height="100%" width="100%"
+              /></a>
+              <h5 class="card-title">Kipon</h5>
+              <p>Casual - Free</p>
+              <p class="card-text">
+                I'm a paragraph. Click here to add your own text and edit me.
+                I’m a great place for you to tell a story and let your users
+                know a little more about you.
+              </p>
+              <a href="#" class="btn btn-primary">Google</a>
+              <a href="#" class="btn btn-primary">apple</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 offset-md-3 mcar">
+          <div class="card" style="border: none; background-color: transparent">
+            <div class="card-body">
+              <p><img src="cart_4.webp" height="100%" width="300px" /></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row join">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6 cat">
+          <img
+            src="poping_cat.webp"
+            class="pop"
+            height="400px"
+            width="70%"
+            alt="cat_image"
+          />
+        </div>
+      </div>
+      <!-- <div class="row star">
+            <div class="col-sm-6">
+                <div class="row m-5 m-lg-4  form"
+                    style=" margin-left: 20% !important; margin-left: 20% !important;  background-color: #d23f3f; height: 90%; width: 60%;">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Get in Touch</h5>
+                            <p class="card-text">I'm a paragraph. Click here to add <br> your own text and edit me.
+                            </p>
+                            <span>First Name</span> <span>Last name</span>
+                            <span><input type="text" class="inp"></span> <span><input type="text" class="inp"></span>
+                            <span>Email</span>
+                            <span><input type="email" class="inp" style="width: 80%;"></span><br><br><br>
+                            <span>Leave us a message...</span>
+                            <span><input type="email" class="inp"></span>
+                            <a href="#" class="btn btn-primary ">subimt</a>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="col-sm-6" style=" justify-content: center; align-items: center;">
+                <div class="card col-sm-6 m-5" style="margin: 300px 0 0 100px !important; background-color:#d23f3f ;">
+                    <div class="card-body">
+
+                        <h5 class="card-title">Email</h5>
+                        <span><input type="email" class="inp"
+                                style="width: 300px; background-color: #f27171;"></span><br><br>
+
+                        <span> <a href="#" class="btn btn-warning">join</a></span>
+
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
+      <div class="row footer">
+        <footer class="text-center text-lg-start bg-light text-muted">
+          <section
+            class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+          >
+            <div class="me-5 d-none d-lg-block">
+              <span>Get connected with us on social networks:</span>
+            </div>
+            <div>
+              <a href="" class="me-4 text-reset">
+                <i class="fa fa-facebook-f"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fa fa-google"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+          </section>
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <h6 class="text-uppercase fw-bold mb-4">Company name</h6>
+                  <p>
+                    Here you can use rows and columns to organize your footer
+                    content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                  </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                  <p>
+                    <a href="#!" class="text-reset">Angular</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">React</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Vue</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Laravel</a>
+                  </p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                  <p>
+                    <a href="#!" class="text-reset">Pricing</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Settings</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Orders</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Help</a>
+                  </p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                  <p><i class="fa fa-home me-3"></i> New York, NY 10012, US</p>
+                  <p>
+                    <i class="fa fa-envelope me-3"></i>
+                    info@example.com
+                  </p>
+                  <p><i class="fa fa-phone me-3"></i> + 01 234 567 88</p>
+                  <p><i class="fa fa-print me-3"></i> + 01 234 567 89</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
